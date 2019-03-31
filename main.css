@@ -300,6 +300,11 @@ ul, li {
     visibility: hidden;
 
 }
+#header_texte {
+    
+    padding-top: 300px;
+
+}
 
 #about {
     display: flex;
