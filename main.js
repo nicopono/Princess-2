@@ -12,3 +12,8 @@ function menuBurger () {
      menuResponsive.style.visibility= "hidden";
 }
 }
+
+
+// var menu = document.getElementById('burger');   
+// menu.classList.add("menu-fixe");    
+// menu.classList.remove("menu-non-fixe");
