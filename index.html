@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Magical_Princess_Mobile</title>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="media_query.css">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900|Poppins:200,300,400,500,600,700,800,900"
         rel="stylesheet">    
@@ -14,7 +16,7 @@
     <header id="img_header">
     <!-- <section id="menu2"> -->
         <nav id="menu-nav"> 
-            <span>Princess</span>
+            <span id=logo>Princess</span>
                 <ul id="menuResponsive">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -155,25 +157,25 @@
             </li> -->
         
         <div id=img-portfolio-container>
-            
-            <div class=img-port>
-                <img src="./img/portfolio/portfolio1.jpg">
-            </div>
-            <div class=img-port>
-                <img src="./img/portfolio/portfolio2.jpg">
-            </div>
-            <div class=img-port>
-                <img src="./img/portfolio/portfolio3.jpg">
-            </div>
-            <div class=img-port>
-                <img src="./img/portfolio/portfolio4.jpg">
-            </div>
-            <div class=img-port>
-                <img src="./img/portfolio/portfolio5.jpg">
-            </div>
-            <div class=img-port>
-                <img src="./img/portfolio/portfolio6.jpg">
-            </div>
+         
+                <div class=img-port>
+                    <img src="./img/portfolio/portfolio1.jpg">
+                </div>
+                <div class=img-port>
+                    <img src="./img/portfolio/portfolio2.jpg">
+                </div>
+                <div class=img-port>
+                    <img src="./img/portfolio/portfolio3.jpg">
+                </div>
+                <div class=img-port>
+                    <img src="./img/portfolio/portfolio4.jpg">
+                </div>
+                <div class=img-port>
+                    <img src="./img/portfolio/portfolio5.jpg">
+                </div>
+                <div class=img-port>
+                    <img src="./img/portfolio/portfolio6.jpg">
+                </div>
             
         </div>
     </section>
@@ -186,23 +188,27 @@
             <span>Alex Smith</span>
             <span>Envato customer</span>
         </div>
-
-        <div id=testimo2>
-            <i class="fas fa-bus"></i>
-            <p>181</p>
-            <p>Happy Customers</p>
-
-            <i class="fas fa-route"></i>
-            <p>103</p>
-            <p>Complete Projects</p>
-
-            <i class="fas fa-passport"></i>
-            <p>2019</p>
-            <p>Lines Of Code</p>
-
-            <i class="fas fa-road"></i>
-            <p>172</p>
-            <p>Files Downloaded</p>
+        <div id=testimo1>
+            <div class=testimo2>
+                <span class=icon> <i class="fas fa-bus"></i> </span>
+                <p>181</p>
+                <p>Happy Customers</p>
+            </div>
+            <div class=testimo2>
+                <span class=icon><i class="fas fa-route"></i></span>
+                <p>103</p>
+                <p>Complete Projects</p>
+            </div>
+            <div class=testimo2>
+                <span class=icon><i class="fas fa-passport"></i></span>
+                <p>2019</p>
+                <p>Lines Of Code</p>
+            </div>
+            <div class=testimo2>
+                <span class=icon><i class="fas fa-road"></i></span>
+                <p>172</p>
+                <p>Files Downloaded</p>
+            </div>
         </div>
     </section>
 
@@ -212,24 +218,24 @@
         <h1>Our Blog.</h1>
             <div id=blog1>
                 <div class=blog2>
-                <h3>Theme Forest</h3>
-                <img src="img/blog/blog1.jpg">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <a href="#">Read More</a>
-            </div>
-            <div class=blog2>
-                <h3>Trends</h3>
-                <img src="img/blog/blog2.jpg">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <a href="#">Read More</a>
-            </div>
-        
-        <div class=blog2>
-                <h3>Wordpress</h3>
-                <img src="img/blog/blog3.jpg">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <a href="#">Read More</a>
-            </div>
+                    <h2>Theme Forest</h2>
+                    <img src="img/blog/blog1.jpg">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <a style="color: blue""#">Read More</a>
+                </div>
+                <div class=blog2>
+                    <h2>Trends</h2>
+                    <img src="img/blog/blog2.jpg">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <a style="color: blue" "#">Read More</a>
+                </div>
+            
+                <div class=blog2>
+                    <h2>Wordpress</h2>
+                    <img src="img/blog/blog3.jpg">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <a style="color: blue" "#">Read More</a>
+                </div>
             </div>
     </section>
 
@@ -239,17 +245,17 @@
         <h1>Contact Us.</h1>
         <div id=contact1>
             <div class=contact2>
-                <i class="far fa-address-card"></i>
+                <span class=icon><i class="far fa-address-card"></i></span>
                 <p>Address</p>
                 <p>6834 Hollywood Blvd - Los Angeles CA</p>
             </div>
             <div class=contact2>
-                <i class="fas fa-inbox"></i>
+                <span class=icon><i class="fas fa-inbox"></i></span>
                 <p>Email</p>
                 <p>Support@website.com</p>
             </div>
             <div class=contact2>
-                <i class="fas fa-phone-volume"></i>
+                <span class=icon><i class="fas fa-phone-volume"></i></span>
                 <p>Phone</p>
                 <p>+20 010 2517 8918</p>
             </div>
@@ -259,9 +265,12 @@
         
 
         <form>
-            <input type="text" name="Name"placeholder="Name">
-            <input type="text" name="Email"placeholder="Email">
-            <textarea cols="45" rows="6"placeholder="Message"></textarea>
+            <div id="form1">
+                <input type="text" name="Name"placeholder="Name">
+                <input type="text" name="Email"placeholder="Email">
+                <textarea cols="45" rows="6"placeholder="Message"></textarea>
+            </div>
+            
             <input class="button" type="submit"value="Submit">
         </form>   
     </section>

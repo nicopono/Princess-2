@@ -2,6 +2,7 @@ body {
     /* text-align: center; */
     font-family: 'Poppins','Montserrat', sans-serif;
     margin:0;
+    
 }
 
 h1 {
@@ -24,6 +25,11 @@ header {
     justify-content: space-between;
     align-items: baseline;  
 }
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+
+}
 #burger {
     visibility: initial;
 }
@@ -31,13 +37,14 @@ header {
 a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 16px;
     padding: 0.5em;
 }
+
 #header_texte {
     text-align: center;
-    padding-top: 40px;
+    /* padding-top: 70px; */
+    font-size: 20px;
 
 }
 /* Position image header */
@@ -83,7 +90,7 @@ a {
     width: 95%;
     height: 20px;
     border-radius: 5px;
-    background-color:rgba(7, 7, 7, 0.787);
+    background-color:rgba(7, 7, 7, 0.534);
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -100,7 +107,7 @@ a {
     width: 80%;
     height: 20px;
     border-radius: 5px;
-    background-color:rgba(7, 7, 7, 0.787);
+    background-color: rgba(7, 7, 7, 0.534);
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -119,7 +126,7 @@ a {
     width: 90%;
     height: 20px;
     border-radius: 5px;
-    background-color: rgba(7, 7, 7, 0.787);
+    background-color: rgba(7, 7, 7, 0.534);
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -135,7 +142,7 @@ a {
 
 /* Buttons Download/Contact me */
 .button {
-    background-color:rgba(7, 7, 7, 0.787);
+    background-color:rgba(7, 7, 7, 0.534);
     color: white;
     padding: 10px 24px;
     text-align: center;
@@ -171,6 +178,7 @@ a {
     padding-top: 30px;
     padding-bottom: 60px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(207, 232, 248);
 
 }
 #services-icon {
@@ -193,11 +201,16 @@ a {
     margin-top: 30px;
 }
 .icon {
+    display: flex;
+    justify-content: center;
+    align-items:center;
     cursor: pointer;
     font-size: 20px;
     background-color: lightgray;
     border-radius: 50%;
-    padding: 15px;
+    /* padding: 15px; */
+    width: 50px;
+    height:50px;
     
 }
 .icon:hover {
@@ -219,10 +232,7 @@ a {
     display: flex;
     flex-direction: column;
     padding:20px;
-    /* width: 500px; */
-
-    
-
+    width: 500px;
 }
 #testimonials {
     display: flex;
@@ -232,24 +242,29 @@ a {
 #testimo {
     display: flex;
     flex-direction: column;
-    align-items:center; 
+    align-items: center; 
     padding: 20px;
     background-color: #F0F0F0;  
 }
-#testimo2 {
+#testimo1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 50px;
+}
+.testimo2 {
     display: flex;
     flex-direction: column;
     align-items:center;   
-    padding-top: 50px;
-    padding-bottom: 40px;
-    font-weight: bolder;
-    
+    font-weight: bolder; 
 }
 #blog {
     display: flex;
     flex-direction: column; 
     padding-top: 30px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: rgb(207, 232, 248);
+    padding-bottom: 30px;
 
 }
 #blog1 {
@@ -262,110 +277,39 @@ a {
     display: flex;
     flex-direction: column; 
     align-items: center;
+
+
 }
 #contact {
     display: flex;
     flex-direction: column; 
     justify-content: center;
     padding-top: 40px;
-
-
 }
 #contact1 {
     display: flex;
     flex-direction: column; 
-    justify-content: center;
+    align-items: center;
     padding: 50px;
 }
 .contact2 {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    width: 265px;
 }
 form {
-    display: flex;
-    flex-direction: column;
+    padding: 30px;
 
 }
-
-
-
-
-/* MEDIA QUERY */
-
-
-@media (max-width: 1050px) { 
-
-ul, li {
-
+#form1 {
     display:flex;
     flex-direction: column;
 }
-
-}
-
-/* MEDIA QUERY */
-@media (min-width: 1050px) { 
-
-  
-#burger {
-    visibility: hidden;
-
-}
-#header_texte {
-    
-    padding-top: 250px;
-
-}
-
-#about {
-    display: flex;
-    flex-direction: row;
-
-}
-#skills-button {
-    display: flex;
-    flex-direction: column;
-}
-
-#services {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-
-}
-
-#services-icon {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 50;
-    align-items: center;
-}
-#img-portfolio-container {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-   
-#testimo2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-#blog1 {
-    display: flex;
-    flex-direction: row; 
-    align-items: center;
-}
-#contact1 {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-evenly;
-  
-}
-
+input, textarea {
+    margin-top: 7px;
+    background-color: rgb(207, 232, 248);
+    border: transparent;
+    border-radius: 2px;
+    padding: 10px;
 }
